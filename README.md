@@ -163,6 +163,7 @@ A tech company was hacked, and forensic engineers captured metadata from each at
 * Feature scaling and transformation
 * Real-world investigative data analysis
 
+---
 ### Project 5:  NLP Project – SMS Spam Detection using PySpark
 
 
@@ -218,9 +219,9 @@ Build a machine learning pipeline to **detect spam messages** from a dataset of 
 Accuracy of model at predicting spam was: 92.95%
 ```
 
----
 
-## 🧪 Libraries & Tools Used
+
+##  Libraries & Tools Used
 
 * Apache Spark (PySpark)
 * Spark MLlib (for modeling and pipelines)
@@ -228,28 +229,6 @@ Accuracy of model at predicting spam was: 92.95%
 * Naive Bayes classifier
 * Jupyter Notebook for development
 
----
-
-##  Result Summary
-
-| Metric   | Score                                                                                  |
-| -------- | -------------------------------------------------------------------------------------- |
-| Accuracy | \~92.96%                                                                               |
-| Model    | Naive Bayes (TF-IDF + Length)                                                          |
-| Insights | Spam messages are often longer and contain specific keywords easily captured by TF-IDF |
-
----
-
-##  Folder Structure
-
-```
-🔹 smsspamcollection/
-│   └── SMSSpamCollection  # Raw dataset
-🔹 nlp_spam_detector.ipynb
-🔹 README.md              # Project summary
-```
-
----
 
 ##  Key Takeaways
 
