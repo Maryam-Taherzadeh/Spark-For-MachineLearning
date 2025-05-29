@@ -37,7 +37,7 @@ The dataset (`cruise_ship_info.csv`) includes features like:
 * Interpretation of linear regression results
 * Spark-based big data processing
 
-
+---
  🚢 Project 2: Predicting Titanic Survivors (Logistic Regression with PySpark MLlib)
 
 📌 Problem Statement:
@@ -83,7 +83,7 @@ Key columns used for prediction:
 * Evaluating binary classification models
  
 
-
+---
 ### 🐶 Project 3: Detecting Spoilage in Dog Food Using Tree-Based Models (PySpark)
 
 **📌 Problem Statement:**
@@ -100,7 +100,7 @@ Each row represents a dog food batch with the following features:
 * `A`, `B`, `C`, `D`: Percentage of each preservative
 * `Spoiled`: Label (1 = spoiled, 0 = not spoiled)
 
-**Steps:**
+** Steps:**
 
 1. **Load and explore the dataset** using Spark DataFrame.
 2. **Assemble features** into a single vector using `VectorAssembler`.
@@ -120,10 +120,6 @@ Each row represents a dog food batch with the following features:
 * Interpreting feature importances for explainable ML
 
 
-
-
-Here's a clear and concise **summary for your Clustering Project** that you can add to your GitHub `README.md`:
-
 ---
 
 ###  Project 4: Hacker Detection Using K-Means Clustering (PySpark)
@@ -131,12 +127,12 @@ Here's a clear and concise **summary for your Clustering Project** that you can 
 **📌 Problem Statement:**
 A tech company was hacked, and forensic engineers captured metadata from each attack session (e.g., session time, typing speed, files accessed). They suspect **2 or 3 hackers**, and you are tasked with identifying how many attackers were involved and grouping the sessions accordingly.
 
-** Goal:**
+**Goal:**
 
 * Use **unsupervised learning (K-Means Clustering)** to detect the number of hackers involved.
 * Determine if **2 or 3 clusters** best represent the data, based on forensic clues (e.g., evenly distributed attacks).
 
-** Features Used:**
+**Features Used:**
 
 * `Session_Connection_Time`
 * `Bytes Transferred`
@@ -146,7 +142,7 @@ A tech company was hacked, and forensic engineers captured metadata from each at
 * `WPM_Typing_Speed`
   (Note: `Location` was excluded due to VPN usage.)
 
-** Steps:**
+**Steps:**
 
 1. **Load the dataset** with Spark.
 2. **Assemble relevant features** into vectors.
@@ -160,7 +156,7 @@ A tech company was hacked, and forensic engineers captured metadata from each at
 * **K=2** clusters → perfectly even groups: `[167, 167]` ✅
   This aligns with forensic insight: hackers traded off attacks evenly → **2 hackers involved**.
 
-** Skills Practiced:**
+**Skills Practiced:**
 
 * Unsupervised machine learning with Spark
 * Clustering with K-Means
