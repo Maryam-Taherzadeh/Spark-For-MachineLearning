@@ -122,10 +122,53 @@ Each row represents a dog food batch with the following features:
 
 
 
-5. **K-means Clustering**  
-   Unsupervised learning to group data points.
+Here's a clear and concise **summary for your Clustering Project** that you can add to your GitHub `README.md`:
 
-6. **NIP with MLlib**  
+---
+
+###  Project 4: Hacker Detection Using K-Means Clustering (PySpark)
+
+**📌 Problem Statement:**
+A tech company was hacked, and forensic engineers captured metadata from each attack session (e.g., session time, typing speed, files accessed). They suspect **2 or 3 hackers**, and you are tasked with identifying how many attackers were involved and grouping the sessions accordingly.
+
+** Goal:**
+
+* Use **unsupervised learning (K-Means Clustering)** to detect the number of hackers involved.
+* Determine if **2 or 3 clusters** best represent the data, based on forensic clues (e.g., evenly distributed attacks).
+
+** Features Used:**
+
+* `Session_Connection_Time`
+* `Bytes Transferred`
+* `Kali_Trace_Used`
+* `Servers_Corrupted`
+* `Pages_Corrupted`
+* `WPM_Typing_Speed`
+  (Note: `Location` was excluded due to VPN usage.)
+
+** Steps:**
+
+1. **Load the dataset** with Spark.
+2. **Assemble relevant features** into vectors.
+3. **Normalize features** using `StandardScaler`.
+4. **Train K-Means models** for `k=2` and `k=3` clusters.
+5. **Compare results** using group sizes and domain insights.
+
+**Results:**
+
+* **K=3** clusters → unevenly sized groups: `[167, 88, 79]`
+* **K=2** clusters → perfectly even groups: `[167, 167]` ✅
+  This aligns with forensic insight: hackers traded off attacks evenly → **2 hackers involved**.
+
+** Skills Practiced:**
+
+* Unsupervised machine learning with Spark
+* Clustering with K-Means
+* Feature scaling and transformation
+* Real-world investigative data analysis
+
+
+7. **NIP with MLlib**  
    Neural-inspired processing using Spark.
 
 ## 🚀 Tools & Libraries
