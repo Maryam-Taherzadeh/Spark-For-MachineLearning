@@ -189,14 +189,14 @@ Build a machine learning pipeline to **detect spam messages** from a dataset of 
 * Read tab-separated SMS data using PySpark.
 * Rename columns and add a new `length` feature to explore message size distribution.
 
-### ✅2. Data Analysis
+### 2. Data Analysis
 
 * Average length of:
 
   * `ham`: \~71 characters
   * `spam`: \~139 characters
 
-### ✅3. Feature Engineering
+### 3. Feature Engineering
 
 * **Tokenization**: Split text into tokens
 * **Stopword Removal**: Eliminate common non-informative words
@@ -205,12 +205,12 @@ Build a machine learning pipeline to **detect spam messages** from a dataset of 
 * **String Indexing**: Convert class labels to numerical form
 * **Vector Assembling**: Combine all features into a single vector
 
-### ✅4. Modeling
+### 4. Modeling
 
 * Model: **Naive Bayes Classifier** (`pyspark.ml.classification.NaiveBayes`)
 * Wrapped in a PySpark **ML Pipeline** for modular processing
 
-### ✅5. Training and Evaluation
+### 5. Training and Evaluation
 
 * Split data into training and test sets (70/30)
 * Evaluate with **MulticlassClassificationEvaluator**
