@@ -221,7 +221,7 @@ Accuracy of model at predicting spam was: 92.95%
 
 
 
-** Libraries & Tools Used**
+**Libraries & Tools Used**
 
 * Apache Spark (PySpark)
 * Spark MLlib (for modeling and pipelines)
@@ -230,7 +230,7 @@ Accuracy of model at predicting spam was: 92.95%
 * Jupyter Notebook for development
 
 
-**  Key Takeaways**
+**Key Takeaways**
 
 * PySpark enables scalable NLP pipelines on large datasets.
 * TF-IDF combined with message length is effective for spam classification.
