@@ -4,17 +4,17 @@ This repository contains hands-on examples of machine learning algorithms implem
 
 ## 📌 Project List
 
-1. **Linear Regression**  
+1. Linear Regression 
 
 ###  Project 1: Predict Crew Size for Cruise Ships (Linear Regression with PySpark MLlib)
 
-**📌 Problem Statement:**
+📌 Problem Statement:
 Hyundai Heavy Industries wants to predict how many **crew members** a cruise ship will need based on its features. This helps in planning staff, resources, and costs efficiently.
 
-** Objective:**
+   Objective:
 Use **Linear Regression** with **PySpark MLlib** to build a machine learning model that can estimate the number of crew required based on ship attributes.
 
-** Dataset Overview:**
+   Dataset Overview:
 The dataset (`cruise_ship_info.csv`) includes features like:
 
 * `Age`: Age of the ship
@@ -23,7 +23,7 @@ The dataset (`cruise_ship_info.csv`) includes features like:
 * `Length`, `Cabins`, `Passenger Density`
 * `Crew` (target variable to predict)
 
-** ML Approach:**
+ ML Approach:
 
 * Use **SparkSession** to read and process the data.
 * Perform **exploratory data analysis** with `.show()` and `.describe()`.
@@ -31,7 +31,7 @@ The dataset (`cruise_ship_info.csv`) includes features like:
 * Train a **Linear Regression** model using MLlib.
 * Evaluate model performance using regression metrics (e.g., RMSE, R²).
 
-** Skills Practiced:**
+ Skills Practiced:
 
 * Data loading and schema inspection with PySpark
 * Feature engineering and selection
