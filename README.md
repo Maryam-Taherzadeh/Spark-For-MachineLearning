@@ -82,8 +82,9 @@ Key columns used for prediction:
 * Building machine learning pipelines in PySpark
 * Evaluating binary classification models
  
-Comparison and evaluation using tree-based classifiers in Spark.
+
 🐶 Project 3: Detecting Spoilage in Dog Food Using Tree-Based Models (PySpark)
+
 📌 Problem Statement:
 A dog food company is investigating early spoilage in its product. The food contains four preservatives (A, B, C, D), and the company suspects one of them may be responsible. Your task is to use machine learning (Decision Trees or Random Forest) to identify which preservative has the strongest effect on spoilage.
  Goal:
@@ -106,6 +107,7 @@ Working with structured data in PySpark
 Feature engineering with Spark’s VectorAssembler
 Applying Decision Tree Classifier
 Interpreting feature importances for explainable ML
+
 
 5. **K-means Clustering**  
    Unsupervised learning to group data points.
