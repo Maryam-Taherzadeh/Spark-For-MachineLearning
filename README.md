@@ -163,9 +163,99 @@ A tech company was hacked, and forensic engineers captured metadata from each at
 * Feature scaling and transformation
 * Real-world investigative data analysis
 
+### Project 5:  NLP Project – SMS Spam Detection using PySpark
 
-7. **NIP with MLlib**  
-   Neural-inspired processing using Spark.
+
+## 📌 Problem Statement
+
+Build a machine learning pipeline to **detect spam messages** from a dataset of SMS text messages. This is a binary classification problem using **Natural Language Processing (NLP)** with **Apache Spark**.
+
+
+## 📂 Dataset Features
+
+| Feature  | Description                         |
+| -------- | ----------------------------------- |
+| `class`  | Target label (`ham` or `spam`)      |
+| `text`   | Raw SMS message                     |
+| `length` | Engineered feature (message length) |
+
+---
+
+##  Steps & Techniques
+
+###  1. Data Loading & Cleaning
+
+* Read tab-separated SMS data using PySpark.
+* Rename columns and add a new `length` feature to explore message size distribution.
+
+### ✅2. Data Analysis
+
+* Average length of:
+
+  * `ham`: \~71 characters
+  * `spam`: \~139 characters
+
+### ✅3. Feature Engineering
+
+* **Tokenization**: Split text into tokens
+* **Stopword Removal**: Eliminate common non-informative words
+* **Count Vectorization**: Convert tokens to word frequency vectors
+* **TF-IDF**: Weight words by importance
+* **String Indexing**: Convert class labels to numerical form
+* **Vector Assembling**: Combine all features into a single vector
+
+### ✅4. Modeling
+
+* Model: **Naive Bayes Classifier** (`pyspark.ml.classification.NaiveBayes`)
+* Wrapped in a PySpark **ML Pipeline** for modular processing
+
+### ✅5. Training and Evaluation
+
+* Split data into training and test sets (70/30)
+* Evaluate with **MulticlassClassificationEvaluator**
+
+```python
+Accuracy of model at predicting spam was: 92.95%
+```
+
+---
+
+## 🧪 Libraries & Tools Used
+
+* Apache Spark (PySpark)
+* Spark MLlib (for modeling and pipelines)
+* TF-IDF & NLP preprocessing
+* Naive Bayes classifier
+* Jupyter Notebook for development
+
+---
+
+##  Result Summary
+
+| Metric   | Score                                                                                  |
+| -------- | -------------------------------------------------------------------------------------- |
+| Accuracy | \~92.96%                                                                               |
+| Model    | Naive Bayes (TF-IDF + Length)                                                          |
+| Insights | Spam messages are often longer and contain specific keywords easily captured by TF-IDF |
+
+---
+
+##  Folder Structure
+
+```
+🔹 smsspamcollection/
+│   └── SMSSpamCollection  # Raw dataset
+🔹 nlp_spam_detector.ipynb
+🔹 README.md              # Project summary
+```
+
+---
+
+##  Key Takeaways
+
+* PySpark enables scalable NLP pipelines on large datasets.
+* TF-IDF combined with message length is effective for spam classification.
+* Pipelines simplify complex transformations and model training.
 
 ## 🚀 Tools & Libraries
 - Apache Spark
