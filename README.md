@@ -167,7 +167,7 @@ A tech company was hacked, and forensic engineers captured metadata from each at
 ### Project 5:  NLP Project – SMS Spam Detection using PySpark
 
 
-## 📌 Problem Statement
+**📌 Problem Statement**
 
 Build a machine learning pipeline to **detect spam messages** from a dataset of SMS text messages. This is a binary classification problem using **Natural Language Processing (NLP)** with **Apache Spark**.
 
@@ -182,7 +182,7 @@ Build a machine learning pipeline to **detect spam messages** from a dataset of 
 
 ---
 
-##  Steps & Techniques
+**Steps & Techniques**
 
 ###  1. Data Loading & Cleaning
 
@@ -221,7 +221,7 @@ Accuracy of model at predicting spam was: 92.95%
 
 
 
-##  Libraries & Tools Used
+** Libraries & Tools Used**
 
 * Apache Spark (PySpark)
 * Spark MLlib (for modeling and pipelines)
@@ -230,7 +230,7 @@ Accuracy of model at predicting spam was: 92.95%
 * Jupyter Notebook for development
 
 
-##  Key Takeaways
+**  Key Takeaways**
 
 * PySpark enables scalable NLP pipelines on large datasets.
 * TF-IDF combined with message length is effective for spam classification.
