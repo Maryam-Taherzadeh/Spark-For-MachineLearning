@@ -83,30 +83,43 @@ Key columns used for prediction:
 * Evaluating binary classification models
  
 
-🐶 Project 3: Detecting Spoilage in Dog Food Using Tree-Based Models (PySpark)
 
-📌 Problem Statement:
-A dog food company is investigating early spoilage in its product. The food contains four preservatives (A, B, C, D), and the company suspects one of them may be responsible. Your task is to use machine learning (Decision Trees or Random Forest) to identify which preservative has the strongest effect on spoilage.
- Goal:
-Build a classification model using Spark MLlib tree-based methods.
-Determine which chemical (A, B, C, or D) contributes most to spoilage by interpreting feature importance.
-🧠 Dataset Overview:
+### 🐶 Project 3: Detecting Spoilage in Dog Food Using Tree-Based Models (PySpark)
+
+**📌 Problem Statement:**
+A dog food company is investigating early spoilage in its product. The food contains four preservatives (A, B, C, D), and the company suspects one of them may be responsible. Your task is to use **machine learning (Decision Trees or Random Forest)** to identify which preservative has the strongest effect on spoilage.
+
+**🎯 Goal:**
+
+* Build a classification model using Spark MLlib tree-based methods.
+* Determine **which chemical (A, B, C, or D)** contributes most to spoilage by interpreting feature importance.
+
+**🧠 Dataset Overview:**
 Each row represents a dog food batch with the following features:
-A, B, C, D: Percentage of each preservative
-Spoiled: Label (1 = spoiled, 0 = not spoiled)
-Steps:
-Load and explore the dataset using Spark DataFrame.
-Assemble features into a single vector using VectorAssembler.
-Train a Decision Tree Classifier using DecisionTreeClassifier.
-Evaluate feature importance from the trained model to find the most predictive preservative.
-Result:
-Feature importance revealed Preservative C (feature index 2) as the most critical factor linked to food spoilage.
-Feature importances: {B: 0.0019, C: 0.9832, D: 0.0149}
-Skills Practiced:
-Working with structured data in PySpark
-Feature engineering with Spark’s VectorAssembler
-Applying Decision Tree Classifier
-Interpreting feature importances for explainable ML
+
+* `A`, `B`, `C`, `D`: Percentage of each preservative
+* `Spoiled`: Label (1 = spoiled, 0 = not spoiled)
+
+**🛠️ Steps:**
+
+1. **Load and explore the dataset** using Spark DataFrame.
+2. **Assemble features** into a single vector using `VectorAssembler`.
+3. **Train a Decision Tree Classifier** using `DecisionTreeClassifier`.
+4. **Evaluate feature importance** from the trained model to find the most predictive preservative.
+
+**📈 Result:**
+
+* Feature importance revealed **Preservative C (feature index 2)** as the **most critical factor** linked to food spoilage.
+* Feature importances: `{B: 0.0019, C: 0.9832, D: 0.0149}`
+
+**💡 Skills Practiced:**
+
+* Working with structured data in PySpark
+* Feature engineering with Spark’s `VectorAssembler`
+* Applying Decision Tree Classifier
+* Interpreting feature importances for explainable ML
+
+
 
 
 5. **K-means Clustering**  
